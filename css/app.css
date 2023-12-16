@@ -1,57 +1,70 @@
-
 .imgPrincipal {
-    background-image: url('https://mdbootstrap.com/img/Photos/Others/images/77.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    height: 100vh;
-  }
+  background-image: url('https://mdbootstrap.com/img/Photos/Others/images/77.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+}
 
 
-  input {
-    flex: 1;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-  }
+input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
 
-  .btn-agregar:hover, .lista-tareas button:hover  {
-    background-color: #cccccc6b;
-    color: black;
-  }
-  
-  
-  .lista-tareas ul {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    min-width: 400px;
-    max-width: 60%;
-    margin-top: 20px;
-  }
-  
-  .lista-tareas li {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    margin-bottom: 10px;
-    gap: 10px;
-    
-  }
-  
-  .lista-tareas button {
-    background-color: #f44336;
-    color: #fff;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-    padding: 10px;
-  }
+#nuevaTarea {
+  width: 200px;
+}
+
+.btn-color {
+  padding: 0px;
+  border-radius: 5px;
+  width: 30px;
+  height: 35px;
+  flex: none;
+}
+
+.btn-agregar:hover,
+.lista-tareas button:hover {
+  background-color: #cccccc6b;
+  color: black;
+}
 
 
-  
+.lista-tareas ul {
+  list-style-type: none;
+  padding: 0;
+  min-width: auto;
+  max-width: 60%;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  gap: 20px;
+}
 
+.lista-tareas li {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  gap: 10px;
+  min-width: 200px;
+  min-height: 200px;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.236); 
+}
+
+.lista-tareas button {
+  background-color: #f44336;
+  color: #fff;
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: none;
+  font-weight: bold;
+}

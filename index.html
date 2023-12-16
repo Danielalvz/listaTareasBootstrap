@@ -13,7 +13,6 @@
   <!-- MDB -->
   <link rel="stylesheet" href="css/mdb.min.css" />
   <!-- Custom styles -->
-  <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/app.css">
 </head>
 
@@ -44,15 +43,23 @@
           <h5 class="mb-4">Ingresa tareas que necesites recordar</h5>
           <section class="form">
             <form id="formTarea">
-              <div class="input-group mb-3">
+              <div class="input-group mb-3 d-flex flex-wrap p-4 justify-content-center">
                 <!--Inicializo el campo de entrada-->
                 <input type="text" class="form-control" id="nuevaTarea" placeholder="Ingresa la nueva tarea:" required>
                 <!--Inicializo el botón con su acción al momento que le demos click-->
-                <div class="input-group-append">
+                <div class="input-group-append d-flex align-items-center">
                   <!-- Botón con clases de Bootstrap -->
                   <button class="btn-agregar btn btn-outline-light" type="button" onclick="agregarTarea()">Agregar
                     Tarea</button>
-                </div>
+                </div>  
+              </div>
+              <div class="d-flex align-items-center justify-content-between px-4">
+                <h5 class="">Ingresa el color de fondo</h5>
+                <input type="color" class="btn-color btn btn-outline-light" id="color">
+              </div>
+              <div class="d-flex align-items-center justify-content-between px-4">
+                <h5 class="">Ingresa el color de texto</h5>
+                <input type="color" class="btn-color btn btn-outline-light" id="colorText">
               </div>
             </form>
           </section>
@@ -63,11 +70,9 @@
   </header>
   <section class="lista-tareas d-flex justify-content-center">
     <!--Ingresaremos la tarea nueva a la lista-->
-    <ul id="listaTareas" class="list-group">
+    <ul id="listaTareas" class="list-group d-flex flex-row justify-content-center flex-wrap align-items-center">
     </ul>
   </section>
-
-
 
 
   <footer>
