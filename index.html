@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title>Material Design for Bootstrap</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
+  <!-- MDB -->
+  <link rel="stylesheet" href="css/mdb.min.css" />
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+  <header>
+    <div class="imgPrincipal ">
+      <!-- Navbar -->
+      <nav class="container-fluid navbar navbar-dark d-flex justify-content-center justify-content-sm-between">
+        <a class="navbar-brand nav-link" href="#">
+          <strong>LISTA DE TAREAS</strong>
+        </a>
+        <ul class="navbar-nav list-inline">
+          <!-- Icons -->
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- Navbar -->
+
+      <!-- Titulo -->
+      <div class="d-flex justify-content-center align-items-center h-100">
+
+        <div class="text-white text-center">
+          <h1 class="mb-3">LISTA DE TAREAS</h1>
+          <h5 class="mb-4">Ingresa tareas que necesites recordar</h5>
+          <section class="form">
+            <form id="formTarea">
+              <div class="input-group mb-3">
+                <!--Inicializo el campo de entrada-->
+                <input type="text" class="form-control" id="nuevaTarea" placeholder="Ingresa la nueva tarea:" required>
+                <!--Inicializo el botón con su acción al momento que le demos click-->
+                <div class="input-group-append">
+                  <!-- Botón con clases de Bootstrap -->
+                  <button class="btn-agregar btn btn-outline-light" type="button" onclick="agregarTarea()">Agregar
+                    Tarea</button>
+                </div>
+              </div>
+            </form>
+          </section>
+        </div>
+      </div>
+    </div>
+    <!-- Titulo -->
+  </header>
+  <section class="lista-tareas d-flex justify-content-center">
+    <!--Ingresaremos la tarea nueva a la lista-->
+    <ul id="listaTareas" class="list-group">
+    </ul>
+  </section>
+
+
+
+
+  <footer>
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2023 Copyright:
+      <a class="text-dark" href="#">Danielalvz</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+
+  <!-- MDB -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Custom scripts -->
+  <script type="text/javascript" src="js/script.js"></script>
+  <!-- Libreria sweetalert -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>

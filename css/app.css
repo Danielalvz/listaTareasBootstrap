@@ -1,0 +1,57 @@
+
+.imgPrincipal {
+    background-image: url('https://mdbootstrap.com/img/Photos/Others/images/77.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+  }
+
+
+  input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+
+  .btn-agregar:hover, .lista-tareas button:hover  {
+    background-color: #cccccc6b;
+    color: black;
+  }
+  
+  
+  .lista-tareas ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-width: 400px;
+    max-width: 60%;
+    margin-top: 20px;
+  }
+  
+  .lista-tareas li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    gap: 10px;
+    
+  }
+  
+  .lista-tareas button {
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 10px;
+  }
+
+
+  
+
