@@ -3,7 +3,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  height: 100vh;
+  height: 80vh;
 }
 
 
@@ -15,7 +15,7 @@ input {
 }
 
 #nuevaTarea {
-  width: 200px;
+  width: 50%;
 }
 
 .btn-color {
@@ -56,6 +56,7 @@ input {
   min-width: 200px;
   min-height: 200px;
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.236); 
+  text-transform: capitalize;
 }
 
 .lista-tareas button {
@@ -67,4 +68,16 @@ input {
   border-radius: 50%;
   border: none;
   font-weight: bold;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+@media screen and (max-width: 300px) {
+  * {
+    font-size: 12px;
+  }
 }
